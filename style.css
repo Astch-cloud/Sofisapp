@@ -1,0 +1,105 @@
+body {
+  font-family: 'Times New Roman', serif;
+  background: url('https://i.imgur.com/gDeiyPN.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  background-color: rgba(70, 130, 180, 0.8);
+  /* Azul lapislázuli suave */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #000;
+  width: 80%;
+  max-width: 600px;
+}
+h1 {
+  color: #000;
+  font-family: 'Garamond', serif;
+  /* Estilo libro clásico */
+}
+.options button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.options button:hover {
+  background-color: #ccc;
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.popup-content {
+  background-color: #FFC0CB;
+  /* Rosa pastel */
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: black;
+}
+.image-frame {
+  margin-top: 20px;
+}
+.image-frame img {
+  max-width: 100%;
+  border: 2px solid #ff6b6b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes sparkles {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, white 0%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+}
